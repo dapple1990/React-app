@@ -6,7 +6,6 @@ import Menu from './components/menu';
 import Giphy from './components/giphy';
 
 
-
 const App = () => (
   <div className="div-wrap">
 <Router>
