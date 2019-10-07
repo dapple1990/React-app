@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.App {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.div-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #445978,
+    #6f6080,
+    #926a7e,
+    #a87978,
+    #b08d76
+  );
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: #233651;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.navbar-opacity {
+  opacity: 0.75;
+}
+
+.giphy-header {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 4em;
+  color: #233651;
+}
+
+.img-giphy {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+.giphy-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-card {
+  margin: 5px;
+  color: #233651;
+  font-family: "Roboto", sans-serif;
+  background: none;
+}
+
+.fact-container {
+  display: flex;
+}
+
+.supportButton {
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #233651;
+  background: #b08d76;
+  border-color: #b08d76;
+}
