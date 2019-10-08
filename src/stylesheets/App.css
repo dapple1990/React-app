@@ -65,3 +65,30 @@ a {
   background: #b08d76;
   border-color: #b08d76;
 }
+
+#submit-button {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #233651;
+  background: #b08d76;
+  border-color: #b08d76;
+}
+
+#dropdown-basic-button {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #233651;
+  background: #b08d76;
+  border-color: #b08d76;
+}
+
+.input-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
