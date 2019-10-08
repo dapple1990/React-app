@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React from "react";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
+import InputForm from "../components/inputForm";
 
-class CupOf extends Component {
-  state = {
-    water: 0,
-    amountOfCoffe: 0
-  }
+const CupOf = () => (
+  <div>
+    <DropdownButton id="dropdown-basic-button" title="Type of coffee">
+      <Dropdown.Item>Flat white</Dropdown.Item>
+      <Dropdown.Item>Cortado</Dropdown.Item>
+      <Dropdown.Item>Capuccino</Dropdown.Item>
+    </DropdownButton>
+    <InputForm />
+  </div>
+);
 
-  howMuch = (num) => {
-    this.setState({
-      
-    })
-
-  }
-}
+export default CupOf;
