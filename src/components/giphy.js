@@ -16,7 +16,6 @@ class Giphy extends Component {
         "https://cors-anywhere.herokuapp.com/https://coffee.alexflipnote.dev/random.json?fbclid=IwAR2FKFn5oty4UzpGvdVVEljHeCdjfPlCgYemKIAu2eYd66HtrPfC2FmX_6M"
       )
       .then(res => {
-        console.log(res);
         const giphys = [];
         giphys.push(res.data);
         this.setState({ giphys });
