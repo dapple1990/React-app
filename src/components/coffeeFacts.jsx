@@ -30,8 +30,8 @@ class About extends Component {
   render() {
     const coffeeFacts = this.state.facts.map((item, key) => {
       return (
-        <Card className="fact-card" style={{ width: "15rem" }}>
-          <Card.Body key={item}>
+        <Card className="fact-card" style={{ width: "15rem" }} key={key}>
+          <Card.Body >
             <Card.Title>Fact</Card.Title>
             {item.fact}
             <Card.Text></Card.Text>
