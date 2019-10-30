@@ -25,6 +25,24 @@ a {
   margin: 8px;
 }
 
+.coffee {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #5E3917;
+}
+
+.water {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #007FAF;
+}
+
+.milk {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #D5CABD;
+}
+
 .navbar-opacity {
   opacity: 0.75;
 }
@@ -87,8 +105,10 @@ a {
 .input-container {
   font-family: "Roboto", sans-serif;
   display: flex;
-  margin: 5px;
+  flex-direction: column;
+  margin: 15px auto;
+  padding: 20px;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
