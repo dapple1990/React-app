@@ -1,29 +1,53 @@
-import React, { Component } from "react";
+import React from "react"
 
-class Counter extends Component {
-  state = {
-    water: 0,
-    coffee: 0,
-    milk: 0,
-    cupOf: 0
-  };
+export const RECIPE_CORTADO = 'Cortado';
+export const RECIPE_ESPRESSO = 'Espresso';
+export const RECIPE_FLATWHITE = 'Flat White';
 
-  render() {
-    const { water, coffee, milk } = this.state;
+export function Counter({ type, amount }) {
+
+  const ingredients = () => {
+    let waterRatio, milkRatio, coffeeRatio = 0;
+    switch (type) {
+      case RECIPE_CORTADO:
+        waterRatio = 2;
+        milkRatio = 4;
+        coffeeRatio = 3;
+        break;
+      case RECIPE_ESPRESSO:
+        waterRatio = 2;
+        milkRatio = 0;
+        coffeeRatio = 2;
+        break;
+      case RECIPE_FLATWHITE:
+        waterRatio = 2;
+        milkRatio = 4;
+        coffeeRatio = 3;
+        break;
+      default:
+        console.log('Drink coffee be fluffy')
+    }
+    let water = amount * waterRatio;
+    let milk = amount * milkRatio;
+    let coffee = amount * coffeeRatio;
     return (
-      <div className="input-container">
-        <span role="img" aria-label="Coffee">
-          ☕
-        </span>
-        <p className="water">Water</p>
-        <p>{water}</p>
-        <p className="coffee">Coffee</p>
-        <p>{coffee}</p>
-        <p className="milk">Milk</p>
-        <p>{milk}</p>
+      <div>
+        <p className="water">Water {water}</p>
+        <p className="coffee">Coffee {coffee}</p>
+        <p className="milk">Milk {milk}</p>
       </div>
-    );
+    )
   }
+
+  return (
+    <div className="input-container">
+      <span role="img" aria-label="Coffee">
+        ☕
+        </span>
+      {ingredients()}
+    </div>
+  );
 }
+
 
 export default Counter;
