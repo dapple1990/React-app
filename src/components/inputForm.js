@@ -7,7 +7,7 @@ const InputForm = ({onChange, value}) =>(
     <Form>
       <Form.Group controlId="formBasicEmail">
         <Form.Label >Cup of Coffee</Form.Label>
-        <Form.Control type="number" onChange={ onChange } value = { value } />
+        <Form.Control type="number" onChange={ onChange } value = { value } min="1" />
       </Form.Group>
     </Form>
   </div>
