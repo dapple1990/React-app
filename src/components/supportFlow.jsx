@@ -1,19 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";
 
+export function SupportButton() {
 
-class SupportButton extends Component {
-  handleSubmit = (event) => {
+  const redirectToFlow = () => {
+    window.location = 'https://www.facebook.com/flowcoffeeandbistro';
+  };
+
+  const handleSubmit = (event) => {
     event.preventDefault();
-    this.redirectToFlow();
+    redirectToFlow();
   };
 
-  redirectToFlow = () => {
-   window.location = 'https://www.facebook.com/flowcoffeeandbistro';
-  };
-
-  render() {
     return (
       <div>
         <ButtonToolbar>
@@ -21,14 +20,13 @@ class SupportButton extends Component {
             className="supportButton"
             variant="info"
             type="submit"
-            onClick={this.handleSubmit}
+            onClick={handleSubmit}
           >
-            Show me!
+            Good coffee alert!
           </Button>
         </ButtonToolbar>
       </div>
     );
   }
-}
 
 export default SupportButton;
