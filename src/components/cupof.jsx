@@ -3,6 +3,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import Counter, { RECIPE_CORTADO, RECIPE_ESPRESSO, RECIPE_FLATWHITE } from "./counter";
 import InputForm from "./inputForm";
+import PropTypes from 'prop-types'
 
 export function CupOf() {
 
@@ -12,7 +13,7 @@ export function CupOf() {
   const handleInputValue = event => {
     const value = parseInt(event.target.value)
     setAmount(!isNaN(value) ? value : 1)
-  }
+  };
 
   const dropDownType = event => {
     setType(event)
@@ -30,6 +31,10 @@ export function CupOf() {
       <Counter type={type} amount={amountOf} />
     </div>
   );
+}
+
+CupOf.propTypes = {
+  amountOf: PropTypes.number
 }
 
 export default CupOf;
