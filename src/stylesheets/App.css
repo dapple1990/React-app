@@ -66,7 +66,8 @@ a {
 }
 
 .fact-card {
-  margin: 5px;
+  margin: 0 auto 5px;
+  margin-top: 8px;
   color: #233651;
   font-family: "Roboto", sans-serif;
   background: none;
@@ -74,6 +75,17 @@ a {
 
 .fact-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fact-button {
+  margin: 0 auto;
+  margin-top: 5px;
+  background: #b08d76;
+  border-color: #b08d76;
+  color: #233651;
+
 }
 
 .supportButton {
